@@ -10,6 +10,7 @@ html {
 
 body {
   margin: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 .container {
@@ -20,14 +21,39 @@ body {
   grid-template-columns: 300px 1fr;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 /* Main sections */
-/* Palette is "Purple" from */
-/* https://tailwindcss.com/docs/customizing-colors */
 
 /* Sidebar */
 .sidebar {
   background-color: #818cf8;
   grid-row: 1 / -1;
+  padding: 18px 24px;
+
+  display: grid;
+  grid-template-rows: 80px 280px 180px;
+}
+
+.sidebar>.logo>h1 {
+  margin: 0;
+}
+
+.sidebar>.nav-links>ul,
+.sidebar>.nav-links>ul {
+  display: grid;
+  gap: 14px;
+
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.sidebar ul {
+  padding: 0;
+  list-style: none;
 }
 
 /* Header */
