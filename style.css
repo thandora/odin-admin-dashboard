@@ -1,0 +1,42 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+
+  grid-template-rows: 1fr 4fr;
+  grid-template-columns: 300px 1fr;
+}
+
+/* Main sections */
+/* Palette is "Purple" from */
+/* https://tailwindcss.com/docs/customizing-colors */
+
+/* Sidebar */
+.sidebar {
+  background-color: #818cf8;
+  grid-row: 1 / -1;
+}
+
+/* Header */
+.header {
+  background-color: #ffffff;
+  min-height: 150px;
+}
+
+/* Content */
+.content {
+  background-color: #c7d2fe;
+}
