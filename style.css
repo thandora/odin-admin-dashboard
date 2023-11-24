@@ -29,7 +29,7 @@ a {
 
 /* Sidebar */
 .sidebar {
-  background-color: #818cf8;
+  background-color: #d8b4fe;
   grid-row: 1 / -1;
   padding: 6px 24px;
 
@@ -197,7 +197,7 @@ a {
   font-weight: 700;
 
   color: #000000;
-  background-color: #818cf8;
+  background-color: #d8b4fe;
 
   border: none;
   border-radius: 50px;
@@ -208,5 +208,86 @@ a {
 
 /* Content */
 .content {
+  padding: 30px 30px;
   background-color: #e2e8f0;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  grid-template-rows: 1fr 1fr;
+  gap: 35px;
+}
+
+.content .section-header h2 {
+  margin: 0;
+  margin-bottom: 12px;
+  font-size: 1.5rem;
+}
+
+.content .project h2 {
+  margin: 0;
+  margin-bottom: 6px;
+  font-size: 1.2rem;
+}
+
+.content p {
+  margin-top: 0px;
+}
+
+.content>.projects-container {
+  grid-row: 1 / -1;
+}
+
+.content .projects {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-auto-rows: 250px;
+}
+
+.content .project {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  border-left: solid 8px #a855f7;
+}
+
+.content .announcements {
+  padding: 26px;
+  background-color: #ffffff;
+  border-radius: 12px;
+}
+
+.content .announcements ul {
+  padding: 0;
+  list-style: none;
+}
+
+/* All list items except eh first */
+.content .announcements li:not(:nth-child(1)) {
+  border-top: 1px solid rgb(161, 161, 161);
+}
+
+.content .announcement {
+  padding: 15px 4px;
+}
+
+.content .announcement p {
+  margin: 0;
+}
+
+.content .announcement a {
+  color: black;
+}
+
+.content .announcement-title {
+  font-size: 1rem;
+  font-weight: 900;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.content .trending-container ul {
+  padding: 26px;
+  background-color: #ffffff;
+  border-radius: 12px;
 }
