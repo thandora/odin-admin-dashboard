@@ -84,9 +84,7 @@
 
             <li>
               <a href="#">
-                <div class="nav-icon">
-                  <img src="assets/nav-icons/cog.svg" alt="cog" />
-                </div>
+                <div class="nav-icon">x</div>
                 <div class="nav-name">Settings</div>
               </a>
             </li>
@@ -96,11 +94,31 @@
 
       <div class="header">
         <div class="header-top">
-          <input type="search" id="dashboard-search" /><button>x</button>
+          <div class="search-container">
+            <input type="search" id="dashboard-search" />
+            <button><i class="search-icon">x</i></button>
+          </div>
+
           <div class="nav-account">
-            <a href="#" class="notification-icon">x Notif</a>
-            <a href="#" class="profile-pic">x Profile Pic</a>
-            <a href="#" class="account-name">Account Name</a>
+            <a href="#" class="nav-link">
+              <div class="nav-icon">
+                <img src="assets/nav-icons/bell.svg" alt="bell" />
+              </div>
+            </a>
+
+            <a href="#" class="nav-link">
+              <div class="nav-icon">
+                <img
+                  src="assets/nav-icons/profile.jpg"
+                  class="profile-picture"
+                  alt="blue background robot"
+                />
+              </div>
+            </a>
+
+            <a href="#" class="nav-link account-name">
+              <p id="account-name">Thandora</p>
+            </a>
           </div>
         </div>
 
