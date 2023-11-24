@@ -31,15 +31,20 @@ a {
 .sidebar {
   background-color: #818cf8;
   grid-row: 1 / -1;
-  padding: 16px 24px;
+  padding: 6px 24px;
 
   display: grid;
   grid-template-rows: 80px 280px 180px;
 }
 
+.sidebar a {
+  align-items: center;
+}
+
+
 .sidebar>.logo>.nav-icon>img {
-  width: 2rem;
-  height: 2rem;
+  width: 3rem;
+  height: 3rem;
 }
 
 .sidebar>.logo h1 {
@@ -81,17 +86,22 @@ a {
 .header {
   background-color: #ffffff;
   color: black;
-  height: 150px;
+  height: 180px;
 
-  padding: 16px 80px;
+  padding: 6px 50px;
   display: grid;
   grid-template-rows: 1fr 1fr;
 }
 
-.header-top {
+.header-top,
+.header-bottom {
   display: grid;
   grid-template-columns: 3fr 1fr;
   align-items: center;
+}
+
+.header-top {
+  padding-bottom: 12px;
 }
 
 .header-top #dashboard-search {
@@ -100,13 +110,14 @@ a {
   background-color: #e2e8f0;
   border-radius: 15px;
   width: 80%;
-  padding: 12px;
+  padding: 8px;
 }
 
 .header-top .nav-account {
   display: grid;
   align-items: center;
-  grid-template-columns: 1fr 1fr 3fr;
+  justify-content: right;
+  grid-template-columns: 50px 50px auto;
   gap: 20px;
 }
 
@@ -137,6 +148,63 @@ a {
   font-weight: 700;
 }
 
+/* Header-bottom */
+.header-bottom ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header-bottom>.header-message-container {
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  gap: 20px;
+}
+
+.header-bottom .profile-picture {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.header-bottom .dashboard-message {
+  align-self: center;
+}
+
+.header-bottom .dashboard-message p {
+  margin-top: 0;
+  margin-bottom: 6px;
+  font-weight: 700;
+}
+
+.header-bottom .dashboard-message .account-name-handle {
+  font-size: 1.8rem;
+}
+
+.header-bottom>.nav-actions>ul {
+  display: grid;
+  grid-template-columns: repeat(3, 140px);
+}
+
+.header-bottom>.nav-actions>ul>li {
+  display: flex;
+  justify-content: end;
+}
+
+.header-bottom button {
+  width: 110px;
+  font-size: 16px;
+  font-weight: 700;
+
+  color: #000000;
+  background-color: #818cf8;
+
+  border: none;
+  border-radius: 50px;
+
+  padding: 10px 20px;
+  cursor: pointer;
+}
 
 /* Content */
 .content {
