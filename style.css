@@ -23,7 +23,6 @@ body {
 
 a {
   text-decoration: none;
-  color: white;
 }
 
 /* Main sections */
@@ -38,7 +37,12 @@ a {
   grid-template-rows: 80px 280px 180px;
 }
 
-.sidebar>.logo>h1 {
+.sidebar>.logo>.nav-icon>img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.sidebar>.logo h1 {
   margin: 0;
 }
 
@@ -47,13 +51,30 @@ a {
   display: grid;
   gap: 14px;
 
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 700;
 }
 
 .sidebar ul {
   padding: 0;
   list-style: none;
+}
+
+.sidebar a {
+  display: grid;
+  grid-template-columns: 32px 1fr;
+  gap: 20px;
+  color: black;
+}
+
+.sidebar .nav-icon {
+  padding-top: 2px;
+  justify-self: right;
+}
+
+.sidebar .nav-icon img {
+  width: 1.4rem;
+  height: 1.4rem;
 }
 
 /* Header */
