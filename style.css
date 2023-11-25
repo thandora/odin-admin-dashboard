@@ -34,13 +34,12 @@ a {
   padding: 6px 24px;
 
   display: grid;
-  grid-template-rows: 80px 280px 180px;
+  grid-template-rows: repeat(3, min-content);
 }
 
 .sidebar a {
   align-items: center;
 }
-
 
 .sidebar>.logo>.nav-icon>img {
   width: 3rem;
@@ -236,7 +235,6 @@ a {
 
 .content .description {
   color: #6a6a6a;
-
 }
 
 .content>.projects-container {
