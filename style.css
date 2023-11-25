@@ -210,10 +210,9 @@ a {
 .content {
   padding: 30px 30px;
   background-color: #e2e8f0;
-  height: auto;
   display: grid;
   grid-template-columns: 1fr 350px;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: min-content min-content;
   gap: 35px;
 }
 
@@ -223,6 +222,7 @@ a {
   font-size: 1.5rem;
 }
 
+/* Content projects */
 .content .project h2 {
   margin: 0;
   margin-bottom: 6px;
@@ -231,6 +231,11 @@ a {
 
 .content p {
   margin-top: 0px;
+}
+
+.content .description {
+  color: #6a6a6a;
+
 }
 
 .content>.projects-container {
@@ -251,15 +256,28 @@ a {
   border-left: solid 8px #a855f7;
 }
 
+/* Content announcements */
 .content .announcements {
-  padding: 26px;
+  padding: 30px 28px;
   background-color: #ffffff;
   border-radius: 12px;
 }
 
 .content .announcements ul {
+  margin: 0;
   padding: 0;
   list-style: none;
+  display: grid;
+  row-gap: 20px;
+  grid-template-rows: repeat(2, minmax(min-content, 1fr));
+}
+
+.content .announcements li:first-child {
+  padding: 0;
+}
+
+.content .announcements li:last-child {
+  padding-bottom: 0;
 }
 
 /* All list items except eh first */
@@ -279,6 +297,10 @@ a {
   color: black;
 }
 
+.content .announcement .announcement-message {
+  font-size: 0.9rem;
+}
+
 .content .announcement-title {
   font-size: 1rem;
   font-weight: 900;
@@ -286,8 +308,9 @@ a {
   margin-bottom: 5px;
 }
 
+/* Content trending */
 .content .trending-container ul {
-  padding: 26px;
+  padding: 30px 28px;
   background-color: #ffffff;
   border-radius: 12px;
 }
