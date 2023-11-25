@@ -7,3 +7,7 @@ Palette is "Purple" (not final) from [tailwind](<https://tailwindcss.com/docs/cu
 ## Navigation Icons
 
 Icons from [Pictogrammers](https://pictogrammers.com/library/mdi/)
+
+## Trending Icons
+
+Icons from [drawkit](https://www.drawkit.com/illustrations/free-transport-illustrations)

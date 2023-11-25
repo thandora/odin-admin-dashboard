@@ -281,7 +281,7 @@ a {
   padding-bottom: 0;
 }
 
-/* All list items except eh first */
+/* All list items except the first */
 .content .announcements li:not(:nth-child(1)) {
   border-top: 1px solid rgb(161, 161, 161);
 }
@@ -310,8 +310,56 @@ a {
 }
 
 /* Content trending */
-.content .trending-container ul {
+.content .trending-contents {
   padding: 30px 28px;
   background-color: #ffffff;
   border-radius: 12px;
+}
+
+.content .trending-container ul {
+  display: grid;
+  gap: 22px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.content .trending-container li {
+  display: grid;
+  column-gap: 18px;
+  grid-template-columns: min-content 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.content .trending .profile-picture {
+  grid-row: 1/-1;
+}
+
+.content .trending .profile-picture img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+/* Hardcoded color backgrounds for profile pictures in trending*/
+.trending-contents li:nth-child(1) img {
+  background-color: #ae94c5;
+}
+
+.trending-contents li:nth-child(2) img {
+  background-color: #6c6e64;
+}
+
+.trending-contents li:nth-child(4) img {
+  background-color: #7aadb6;
+}
+
+.content .trending .handle {
+  color: black;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.content .trending .project {
+  color: #6a6a6a;
 }
